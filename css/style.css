@@ -147,13 +147,13 @@ ul {
   margin: 0;
 }  
 
-.header-nav,
+.header__header-nav,
 .site-nav,
 .auto-nav  {
   display: flex;
 }
 
-.header-nav {
+.header__header-nav {
   justify-content: space-between;
   align-items: center;
 }
@@ -172,7 +172,7 @@ ul {
   fill: currentColor;
 }
 
-.auto-nav .link {
+.auto-nav__link {
   display: flex;
   align-items: center;
 }
@@ -180,16 +180,16 @@ ul {
 
 /* site-nav */
 
-.site-nav li:not(:last-child) {
+.site-nav .li:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav {
+.site-nav__link {
   padding-left: 0;
   margin-left: 93px;
 }
 
-.site-nav .link {
+.site-nav__link {
   color: var(--black-text);
   font-weight: 500;
   font-size: 14px;
@@ -222,8 +222,8 @@ ul {
 
 /* меню с подчеркиванием */
 
-.site-nav .link:hover, 
-.site-nav .link:focus {
+.site-nav__link:hover, 
+.site-nav__link:focus {
   color: var(--blue-text);
   letter-spacing: 0.02em;
 
@@ -237,11 +237,11 @@ ul {
 
 /* auth-nav */
 
-.auto-nav {
+.auto-nav__link {
   margin-left: auto;
 }
 
-.auto-nav .link  {
+.auto-nav__link  {
   color: var(--grey-text);
   font-weight: 500;
   font-size: 14px;
@@ -253,18 +253,25 @@ ul {
 
 }
 
-.auto-nav .link:hover,
-.auto-nav .link:focus {
+.auto-nav__link:hover,
+.auto-nav__link:focus {
   color: var(--blue-text);
   letter-spacing: 0.02em;
 
 }
 
-.auto-nav .icon-header:hover,
-.auto-nav .icon-header:focus {
+.auto-nav__link:focus-within .icon-header,
+.auto-nav__link:hover .icon-header {
   color: var(--blue-text);
 
 }
+
+
+/* .auto-nav .icon-header:hover,
+.auto-nav .icon-header:focus {
+  color: var(--blue-text);
+
+} */
 
 .auto-nav li:not(:last-child) {
   margin-right: 50px;
@@ -298,7 +305,7 @@ ul {
   
 }
 
-.hero-title {
+.hero__hero-title {
   color: var(--white-text);
   font-weight: 900;
   font-size: 44px;
@@ -309,7 +316,7 @@ ul {
   
 }
 
-.hero-button {
+.hero__hero-button {
   font-family: Roboto, sans-serif;
   color: var(--white-text);
   background-color: var(--blue-text);
@@ -977,7 +984,6 @@ li .button {
 
 
 .signup-form .group-modal {
-  /* padding: 0 40px; */
   display: flex;
   flex-direction: column;
   color: var(--grey-text);
