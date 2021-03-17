@@ -46,7 +46,7 @@
 
 }
 
-.advantages-list__item :not(:last-child) {
+&:not(:last-child) {
   margin-right: 30px;
 }
 

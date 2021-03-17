@@ -14,8 +14,8 @@
   border: none;
 }
 
-.card-set__button:hover,
-.card-set__button:focus {
+&:hover,
+&:focus {
   color: var(--white-text);
   background-color: var(--blue-text);
   letter-spacing: 0.03em;

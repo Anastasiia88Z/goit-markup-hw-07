@@ -63,7 +63,7 @@
   background-color: var(--white-text);
 }
 
-.team-list__team-item:not(:last-child) {
+&:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -95,13 +95,13 @@
   
 }
 
+&:hover, 
+&:focus { 
+  background-color: var(--blue-text);
+  color: var(--white-text); 
+}
+
 .social-list__instagram-icon {
   fill: currentColor;
 }
 
-.social-list__social-link:hover, 
-.social-list__social-link:focus { 
-  background-color: var(--blue-text);
-  color: var(--white-text); 
-
-}
